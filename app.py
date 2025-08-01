@@ -7,8 +7,10 @@ import base64
 # -------------------- Page Config --------------------
 st.set_page_config(page_title="AI Interview Coach", layout="centered")
 
-# -------------------- API Key --------------------
-API_KEY = "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"
+
+
+API_KEY = st.secrets["openai"]["api_key"]
+
 
 # -------------------- Background --------------------
 def set_background(image_path):
